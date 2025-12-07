@@ -5,7 +5,10 @@ You will be instructed on how to install and configure your very own handheld co
 ### Our Goal
 Once properly set up, you'll have a console that'll automatically access a web-based database of games (of your choosing) that can be played anywhere and anytime. You'll no longer need to rely on expensive pre-made consoles, when you can make your own console with only what you spicifically want in it.
 
-| Header 1 | Header 2 | Header 3 |
+| Expected Materials | Estimated Costs | Alternative Options |
 |---|---|---|
-| Row 1, Cell 1 | Row 1, Cell 2 | Row 1, Cell 3 |
-| Row 2, Cell 1 | Row 2, Cell 2 | Row 2, Cell 3 |
+| Rasberry Pie A+/B+/2B/3B/3B+/4B | ??? | Raspberry Pi Zero/Zero W/Zero + HDMI cable |
+| Game HAT | ??? | Using a controller/keyboard, a monitor and (optional) speakers |
+| 18650 lithium battery | ??? | 5V/2A powered Micro-USB/USB-C charging plug |
+| Micro-SD card | ??? | Any storage size |
+| 3D printed shell | ??? | Leaving the device exposed |
