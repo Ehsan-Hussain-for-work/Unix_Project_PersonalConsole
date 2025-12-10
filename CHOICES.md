@@ -10,14 +10,13 @@ the Nintendo switch.
 
 #### Expected Hardware:
 For the hardware, we decided to use the raspberry pi as it is lightweight, supports Linux natively and can run emulation software
-such as box86/64 and Wine, software needed to run the games we would like (Fallout 1 and 2). As well as the raspberry pi, we also
+such as RetroPie, software needed to run the games we would like (Fallout 1 and 2). As well as the raspberry pi, we also
 chose the Game Hat interface due to it having built in buttons, joysticks, speakers as well as a screen. This makes it an all in one 
 portable console, and, due to the joysticks, makes it perfect for isometric games relative to other types of hardware we could've used. It 
 also has pretty good physical integration with the raspberry pi.
 
 #### Extra Features:
-We 3D printed a shell as the device was very fragile and exposed without it. The shell would protect the electrical 
-components within the console from external elements. 
+We 3D printed a shell as the device was very fragile and exposed without it. The shell would protect the electrical components within the console from external elements. We also got 4 18650 batteries from Canadian Tire, as they are required for the system to be portable and work as a handheld mobile console.
 
 #### Expected Softwares:
 At first, we rejected using RetroPie as it focuses on console games while we plan to run cumputer games, but we ended up comming around to it as
@@ -31,6 +30,5 @@ For the game we plan to be inside the device, we are choosing Fallout 1, Fallout
 - Fallout 1 & Fallout 2 are also classic retro-styled games which would minimize the risk of compatibility issues with a console made for more older games.
 
 #### Various Considerations:
-For the future, we plan to use Raspberry Pi OS due to the fact it is optimized for the raspberry pi hardware. It also supports Box86/64 and Wine, which are
-softwares needed to run games that aren't as simple as arcaide ones. AntiMicroX might be required to convert the joystick and button inputs of the handheld
-console into keyboard inputs for the computer games, as the Game Hat driver might not work with games that aren't suported by RetroPie.
+For the future, we plan to use Raspberry Pi OS due to the fact it is optimized for the raspberry pi hardware. It also supports RetroPi. which is a
+software needed to run games that aren't as simple as arcade ones.We initially wanted to use Box86/64 and Wine but decided against it and instead chose to use RetroPie and DosBox instead, as they are a lot simpler and straightforward and also there is a tutorial on the gamehat website for how to use them.

@@ -1,19 +1,20 @@
 # INSTALLATION GUIDE:
 
 ## REQUIREMENTS:
-- Raspberry Pi 
+- Raspberry Pi 4B
 - Game HAT interface (Has Joysticks buttons and screen)
 - Power supply (18650 battery)
 - Optional: 3D-printed case from Thingiverse
 - (Model: Thingiverse Model ID: 3752237)
 - MicroSD
+- HDMI connector compatible with your Raspberry Pi model
 
 ## SOFTWARE:
 - Raspberry Pi OS (32-bit recommended)
-- Box86
-- Box64
-- Wine
-- AntiMicroX
+- RetroPie OS
+- DosBox Emulator
+- Game Hat Driver (from Waveshare Wiki)
+- X11 session (required to allow RetroPie to work properly on Raspberry Pi OS)
 - Fallout 1 and Fallout 2 Linux-compatible installers
 
 ## STEPS TO INSTALLATION:
@@ -35,65 +36,43 @@
 
 NEXT
 
-## Install Needed Dependencies:
+## Installing GameHat Driver:
+- Download the correct RetroPie image for your Raspberry Pi model:
+- RetroPie Image for Pi 4
+- RetroPie Image for Pi 2/3
+- RetroPie Image for Pi 1/Zero
 
-#### Needed Dependencies for Box86/64
-    sudo dpkg --add-architecture i386
-    sudo apt update
-    sudo apt install git cmake build-essential python3 -y
-    sudo apt install libgl1-mesa-dev libsdl2-dev -y
-    git clone https://github.com/ptitSeb/box86
+- Unzip the downloaded .zip file to obtain the .img file.
 
-#### Install Box86
-    cd box86
-    mkdir build && cd build
-    cmake .. -DRPI4=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo
-    make -j4
-    sudo make install
-    sudo systemctl restart systemd-binfmt
+- Insert your microSD card into your computer.
 
-#### Install Box64
-    cd ~
-    git clone https://github.com/ptitSeb/box64
-    cd box64
-    mkdir build && cd build
-    cmake .. -DRPI4=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo
-    make -j4
-    sudo make install
-    sudo systemctl restart systemd-binfmt
+- Use a flashing tool (such as Raspberry Pi Imager or Win32DiskImager) to write the RetroPie .img file to the microSD card.
 
-#### Install Wine
-    sudo dpkg --add-architecture i386
-    sudo apt update
-    sudo apt install wine wine32 wine64 -y
-    winecfg
+- Insert the prepared microSD card into the Raspberry Pi.
 
-#### Install Antimicrox
-    sudo apt install antimicrox -y
+- Connect the Raspberry Pi to the Game HAT:
 
-## PREPARE FOR FALLOUT GAME FILES
+- Attach the Raspberry Pi to the Game HAT’s GPIO header
 
-#### Create a folder:
-    mkdir ~/fallout
-    cd ~/fallout
+- Connect the correct HDMI adapter between the Pi and the Game HAT screen
+- (Note: Game Hat includes different adapters; ensure you are using the correct one for your Pi model.)
+- Toggle the Game HAT Battery switch to ON.
 
-Copy GOG installers into this folder
-setup_fallout_1.exe
-setup_fallout_2.exe
+## IMPORTANT TO NOTE:If the battery is low, RetroPie may not boot
 
-#### INSTALL FALLOUT:
-In the cmd
-wine setup_fallout_1.exe
-wine setup_fallout_2.exe
+- You can connect a 5V/2A charger to power and charge the device. The charge indicator will blink while charging.
 
+- RetroPie will boot into its main interface.
 
-#### Configure controls
-Open antimicrox and perform the following changes
+- Use the joystick to navigate emulator categories
 
-#### Map:
-- D-Pad → Arrow keys / WASD  
-- Buttons → Enter, Space, etc.
-- Joystick → Mouse movement, Mouse click (when pressed downwards)
+- Press A to select options
 
-## Most Important Step!
-Launch the games
+- Find the button configuration tab and configure the buttons to your liking
+
+- Press Exit to close the OSD menu
+
+## To set up the wifi 
+- In retroPie open the wifi setup tool
+- When asked for "ESSID", enter your Wi-Fi network name manually, then enter your password
+- The system will then assign you an IP address.
