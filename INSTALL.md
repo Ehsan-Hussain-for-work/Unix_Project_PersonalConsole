@@ -76,3 +76,19 @@ NEXT
 - In retroPie open the wifi setup tool
 - When asked for "ESSID", enter your Wi-Fi network name manually, then enter your password
 - The system will then assign you an IP address.
+
+#### The Coding Segment
+
+###### In config.txt
+hdmi_force_hotplug=1
+hdmi_group=2
+hdmi_mode=87
+hdmi_cvt=640 480 60 1 0 0 0
+
+###### Terminal
+cd RetroPie-Setup/
+sudo ./retropie_setup.sh
+
+###### Terminal (also)
+sudo nano /etc/modprobe.d/mk_arcade_joystick_rpi.conf
+options mk_arcade_joystick_rpi map=5 gpio=5,6,13,19,21,4,26,12,23,20,16,18
