@@ -18,7 +18,7 @@
 - Fallout 1 and Fallout 2 Linux-compatible installers
 
 ## STEPS TO INSTALLATION:
-
+(use https://www.waveshare.com/wiki/Game_HAT & https://retropie.org.uk/download/ for more details)
 
 ### Raspberry Pi OS (SETUP):
 
