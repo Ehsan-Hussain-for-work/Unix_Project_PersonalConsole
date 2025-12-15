@@ -1,15 +1,20 @@
 # Unix_Project_PersonalConsole
-This is a repository dedicated to setting-up a handheld console from scratch.
-You will be instructed on how to install and configure your very own handheld console and add whatever game you'd want on it. The repository falls under the MIT license, but DO BE WARNED THAT the optinal 3D printed shell provided by jobussens from thingiverse (3752237) falls under the license of CC BY-NC.
+This repository is dedicated to setting up a handheld console from scratch.
+You will be guided through the process of installing and configuring your own
+handheld console and adding any games you want.
 
-### Our Goal
-Once properly set up, you'll have a console that'll automatically access a web-based database of games (of your choosing) that can be played anywhere and anytime. You'll no longer need to rely on expensive pre-made consoles, when you can make your own console with only what you spicifically want in it.
+## Our Goal
+Once properly set up, you will have a console that automatically accesses a
+web-based game database of your choosing, allowing games to be played anywhere
+and anytime. You will no longer need to rely on expensive pre-made consoles when
+you can build a custom device containing only what you want.
 
 
-| Expected Materials | Estimated Costs | Alternative Options |
+## Materials
+| Expected Materials | Estimated Cost (CAD) | Alternative Options |
 |---|---|---|
-| Raspberry Pi A+/B+/2B/3B/3B+/4B | $87.00 CAD | Raspberry Pi Zero/Zero W/Zero + HDMI cable |
-| Game HAT | $64.95 CAD | Using a controller/keyboard, a monitor and (optional) speakers |
-| 18650 lithium battery | $19.99 CAD | 5V/2A powered Micro-USB/USB-C charging plug |
-| Micro-SD card | $15.95 CAD | Any storage size |
-| 3D printed shell | $0.15 CAD | Leaving the device exposed |
+| Raspberry Pi A+/B+/2B/3B/3B+/4B | $87.00 | Raspberry Pi Zero / Zero W / Zero + HDMI cable |
+| Game HAT | $64.95 | Controller/keyboard with monitor and optional speakers |
+| 18650 lithium battery | $19.99 | 5V / 2A Micro-USB or USB-C power supply |
+| MicroSD card | $15.95 | Any storage capacity |
+| 3D-printed shell | $0.15 | Leaving the device exposed |
